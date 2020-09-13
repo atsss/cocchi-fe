@@ -5,8 +5,8 @@ interface Props {
   children: React.ReactNode
 }
 
-export const Section: React.FC<Props> = ({ children }) => (
-  <section className={styles.container}>
+export const Header: React.FC<Props> = ({ children }) => (
+  <header className={styles.container}>
     <div className={styles.content}>{children}</div>
-  </section>
+  </header>
 )
