@@ -19,6 +19,6 @@ export const Img: React.FC<Props> = ({
   <img
     src={src}
     alt={alt}
-    className={[styles[size], styles[border], className].join(' ')}
+    className={[styles.img, styles[size], styles[border], className].join(' ')}
   />
 )
