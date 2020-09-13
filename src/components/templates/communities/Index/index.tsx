@@ -1,6 +1,7 @@
 import React from 'react'
 import { User, Community } from '../../../../interfaces'
 import { CommunityHeader } from '../../../organisms/headers/CommunityHeader'
+import { Nav } from '../../../organisms/Nav'
 import { Section } from '../../../atoms/Section'
 import { CommunityList } from '../../../molecules/lists/CommunityList'
 
@@ -28,5 +29,6 @@ export const CommunitiesIndexTemplate: React.FC<Props> = ({
         />
       ))}
     </Section>
+    <Nav />
   </>
 )
