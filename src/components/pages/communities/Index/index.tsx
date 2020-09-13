@@ -1,4 +1,7 @@
 import React from 'react'
-import { Txt } from '../../../atoms/Txt'
+import { CommunitiesIndexTemplate as Template } from '../../../templates/communities/Index'
+import { user, communities } from '../../../../config/data'
 
-export const CommunitiesIndex = () => <Txt>Hi</Txt>
+export const CommunitiesIndex = () => (
+  <Template user={user} communities={communities} />
+)
