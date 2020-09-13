@@ -4,6 +4,7 @@ import styles from './styles.module.sass'
 import { User } from '../../../../interfaces'
 import { Header } from '../../../atoms/Header'
 import { Img } from '../../../atoms/Img'
+import { Link } from '../../../atoms/Link'
 import { Txt } from '../../../atoms/Txt'
 
 interface Props {
@@ -18,7 +19,9 @@ export const CommunityHeader: React.FC<Props> = ({ user }) => (
         <Txt weight="bold">{user.name}</Txt>
       </div>
       <div className={styles.icon}>
-        <BsThreeDots />
+        <Link to={`/users/${user.id}/edit`}>
+          <BsThreeDots />
+        </Link>
       </div>
     </div>
   </Header>
