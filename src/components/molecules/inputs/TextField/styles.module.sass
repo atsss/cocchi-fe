@@ -1,0 +1,13 @@
+@import '../../../../config/variables/style.sass'
+
+.input
+  label
+    color: $subColor
+  input
+    color: $primaryColor
+    border-color: $subColor
+    &::placeholder
+      color: $subColor
+    &:focus
+      border-color: $primaryColor !important
+      box-shadow: 0 1px 0 $primaryColor !important
