@@ -24,11 +24,11 @@ export const CommunitiesIndexTemplate: React.FC<Props> = ({
       <Section>
         {communities.map((community: Community, index: number) => (
           <BlockButton
+            key={community.id}
             onPress={() => history.push(`communities/${community.id}/channels`)}
             className={index === 0 ? '' : 'u-mt16'}
           >
             <CommunityList
-              key={community.id}
               id={community.id}
               name={community.name}
               image={community.image}

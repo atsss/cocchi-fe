@@ -1,6 +1,6 @@
 import React from 'react'
 import { Community, Channel } from '../../../../interfaces'
-import { Section } from '../../../atoms/Section'
+import { ChannelLists } from '../../../organisms/lists/ChannelLists'
 import { ChannelHeader } from '../../../organisms/headers/ChannelHeader'
 import { Nav } from '../../../organisms/Nav'
 
@@ -15,11 +15,7 @@ export const ChannelsIndexTemplate: React.FC<Props> = ({
 }) => (
   <>
     <ChannelHeader community={community} />
-    <Section>
-      {channels.map((channel: Channel) => (
-        <p>{channel.name}</p>
-      ))}
-    </Section>
+    <ChannelLists channels={channels} />
     <Nav />
   </>
 )
