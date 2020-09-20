@@ -26,3 +26,20 @@ export const communities = [
     numOfFolders: 2,
   },
 ]
+export const channels = [
+  {
+    id: 1,
+    name: 'お寿司',
+    icon: 'sushi',
+  },
+  {
+    id: 2,
+    name: 'ケーキ',
+    icon: 'cake',
+  },
+  {
+    id: 3,
+    name: 'おしゃれ',
+    icon: 'sparkles',
+  },
+]

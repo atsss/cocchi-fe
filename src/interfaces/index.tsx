@@ -11,3 +11,9 @@ export interface Community {
   members: string
   numOfFolders: number
 }
+
+export interface Channel {
+  id: number
+  name: string
+  icon: string
+}
