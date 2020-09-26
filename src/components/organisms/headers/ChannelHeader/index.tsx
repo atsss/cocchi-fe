@@ -17,6 +17,7 @@ export const ChannelHeader: React.FC<Props> = ({ community }) => (
       <div className={styles.block}>
         <Img src={community.image} size="s" className="u-mr8" />
         <Txt weight="bold">{community.name}</Txt>
+        <Txt size="s">{`${community.numOfFolders} folders`}</Txt>
       </div>
       {/* <div className={styles.icon}> */}
       {/*   <Link to={`/communitys/${community.id}/edit`}> */}
