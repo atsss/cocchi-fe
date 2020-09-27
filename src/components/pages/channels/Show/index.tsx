@@ -1,14 +1,14 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { ChannelsIndexTemplate as Template } from '../../../templates/channels/Index'
-import { communities, channels } from '../../../../config/data'
+import { ChannelsShowTemplate as Template } from '../../../templates/channels/Show'
+import { channels } from '../../../../config/data'
 
 export const ChannelsShow: React.FC = () => {
-  const { id } = useParams()
-  const community = communities.find(
-    (element) => element.id === parseInt(id, 10)
+  const { channelId } = useParams()
+  const channel = channels.find(
+    (element) => element.id === parseInt(channelId, 10)
   )
 
-  if (!community) return <p>error</p>
-  return <Template community={community} channels={channels} />
+  if (!channel) return <p>error</p>
+  return <Template channel={channel} channels={channels} />
 }

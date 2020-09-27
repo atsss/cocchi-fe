@@ -12,7 +12,7 @@ export const Routes: React.FC = () => (
     <Route exact path="/communities/:id/channels" component={ChannelsIndex} />
     <Route
       exact
-      path="/communities/:id/channels/:id"
+      path="/communities/:communityId/channels/:channelId"
       component={ChannelsShow}
     />
   </Switch>

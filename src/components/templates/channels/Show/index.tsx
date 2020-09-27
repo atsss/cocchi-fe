@@ -1,20 +1,20 @@
 import React from 'react'
-import { Community, Channel } from '../../../../interfaces'
+import { Channel } from '../../../../interfaces'
 import { ChannelLists } from '../../../organisms/lists/ChannelLists'
-import { ChannelHeader } from '../../../organisms/headers/ChannelHeader'
+import { MapHeader } from '../../../organisms/headers/MapHeader'
 import { Nav } from '../../../organisms/Nav'
 
 interface Props {
-  community: Community
+  channel: Channel
   channels: Channel[]
 }
 
 export const ChannelsShowTemplate: React.FC<Props> = ({
-  community,
+  channel,
   channels,
 }) => (
   <>
-    <ChannelHeader community={community} />
+    <MapHeader channel={channel} />
     <ChannelLists channels={channels} />
     <Nav />
   </>
