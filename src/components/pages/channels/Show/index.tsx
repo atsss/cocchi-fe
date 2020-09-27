@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { ChannelsIndexTemplate as Template } from '../../../templates/channels/Index'
 import { communities, channels } from '../../../../config/data'
 
-export const ChannelsShow = () => {
+export const ChannelsShow: React.FC = () => {
   const { id } = useParams()
   const community = communities.find(
     (element) => element.id === parseInt(id, 10)
