@@ -1,20 +1,16 @@
 import React from 'react'
 import { Channel } from '../../../../interfaces'
 import { ChannelLists } from '../../../organisms/lists/ChannelLists'
-import { MapHeader } from '../../../organisms/headers/MapHeader'
+import { EditHeader } from '../../../organisms/headers/EditHeader'
 import { Nav } from '../../../organisms/Nav'
 
 interface Props {
-  channel: Channel
   channels: Channel[]
 }
 
-export const ChannelsEditTemplate: React.FC<Props> = ({
-  channel,
-  channels,
-}) => (
+export const ChannelsEditTemplate: React.FC<Props> = ({ channels }) => (
   <>
-    <MapHeader channel={channel} />
+    <EditHeader backPath="/">フォルダー変更</EditHeader>
     <ChannelLists channels={channels} />
     <Nav />
   </>
