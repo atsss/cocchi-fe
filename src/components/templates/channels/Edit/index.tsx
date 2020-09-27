@@ -5,6 +5,7 @@ import { EditHeader } from '../../../organisms/headers/EditHeader'
 import { Nav } from '../../../organisms/Nav'
 
 interface Props {
+  channel: Channel
   channels: Channel[]
 }
 
