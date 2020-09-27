@@ -1,7 +1,7 @@
 import React from 'react'
 import { Channel } from '../../../../interfaces'
 import { ChannelLists } from '../../../organisms/lists/ChannelLists'
-import { EditHeader } from '../../../organisms/headers/EditHeader'
+import { MapHeader } from '../../../organisms/headers/MapHeader'
 import { Nav } from '../../../organisms/Nav'
 
 interface Props {
@@ -14,7 +14,7 @@ export const ChannelsEditTemplate: React.FC<Props> = ({
   channels,
 }) => (
   <>
-    <EditHeader channel={channel} />
+    <MapHeader channel={channel} />
     <ChannelLists channels={channels} />
     <Nav />
   </>
