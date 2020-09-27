@@ -4,10 +4,8 @@ import { ChannelsShowTemplate as Template } from '../../../templates/channels/Sh
 import { channels } from '../../../../config/data'
 
 export const ChannelsShow: React.FC = () => {
-  const { channelId } = useParams()
-  const channel = channels.find(
-    (element) => element.id === parseInt(channelId, 10)
-  )
+  const { id } = useParams()
+  const channel = channels.find((element) => element.id === parseInt(id, 10))
 
   if (!channel) return <p>error</p>
   return <Template channel={channel} channels={channels} />
