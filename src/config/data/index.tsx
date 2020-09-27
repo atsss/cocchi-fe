@@ -31,15 +31,18 @@ export const channels = [
     id: 1,
     name: 'お寿司',
     icon: 'sushi',
+    numOfPlaces: 9,
   },
   {
     id: 2,
     name: 'ケーキ',
     icon: 'cake',
+    numOfPlaces: 8,
   },
   {
     id: 3,
     name: 'おしゃれ',
     icon: 'sparkles',
+    numOfPlaces: 7,
   },
 ]

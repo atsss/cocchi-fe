@@ -16,4 +16,5 @@ export interface Channel {
   id: number
   name: string
   icon: string
+  numOfPlaces: number
 }

@@ -1,27 +1,27 @@
 import React from 'react'
 /* import { BsThreeDots } from 'react-icons/bs' */
 import styles from './styles.module.sass'
-import { Community } from '../../../../interfaces'
+import { Channel } from '../../../../interfaces'
 import { Header } from '../../../atoms/Header'
 /* import { Link } from '../../../atoms/Link' */
 import { Txt, SubTxt } from '../../../atoms/Txt'
 
 interface Props {
-  community: Community
+  channel: Channel
 }
 
-export const MapHeader: React.FC<Props> = ({ community }) => (
+export const MapHeader: React.FC<Props> = ({ channel }) => (
   <Header>
     <div className={[styles.block, styles.height].join(' ')}>
       <div>
         <div className={styles.block}>
-          <SubTxt>sushi</SubTxt>
-          <Txt weight="bold">{community.name}</Txt>
+          <SubTxt>{channel.icon}</SubTxt>
+          <Txt weight="bold">{channel.name}</Txt>
         </div>
-        <Txt size="s">{`${community.numOfFolders} pins`}</Txt>
+        <Txt size="s">{`${channel.numOfPlaces} pins`}</Txt>
       </div>
       {/* <div className={styles.icon}> */}
-      {/*   <Link to={`/communitys/${community.id}/edit`}> */}
+      {/*   <Link to={`/channels/${Channel.id}/edit`}> */}
       {/*     <BsThreeDots /> */}
       {/*   </Link> */}
       {/* </div> */}
