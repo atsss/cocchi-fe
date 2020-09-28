@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './styles.module.sass'
 
-interface Props {
+export interface Props {
   src: string
   size?: string
   alt?: string

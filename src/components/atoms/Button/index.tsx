@@ -2,7 +2,7 @@ import React from 'react'
 import { Button as DefaultButton } from '@adobe/react-spectrum'
 import styles from './styles.module.sass'
 
-interface Props {
+export interface Props {
   onPress: () => void
   children: React.ReactNode
   className?: string
