@@ -46,3 +46,16 @@ export const channels = [
     numOfPlaces: 7,
   },
 ]
+
+export const places = [
+  {
+    id: 1,
+    name: 'starbacks',
+    image: 'https://cocchi-sample.s3-us-west-2.amazonaws.com/community3.jpg',
+  },
+  {
+    id: 2,
+    name: 'sushi',
+    image: 'https://cocchi-sample.s3-us-west-2.amazonaws.com/community3.jpg',
+  },
+]

@@ -18,3 +18,9 @@ export interface Channel {
   icon: string
   numOfPlaces: number
 }
+
+export interface Place {
+  id: number
+  name: string
+  image: string
+}
