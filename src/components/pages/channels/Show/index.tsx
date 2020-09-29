@@ -8,5 +8,5 @@ export const ChannelsShow: React.FC = () => {
   const channel = channels.find((element) => element.id === parseInt(id, 10))
 
   if (!channel) return <p>error</p>
-  return <Template channel={channel} channels={channels} places={places} />
+  return <Template channel={channel} places={places} />
 }
