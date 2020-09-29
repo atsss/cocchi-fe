@@ -9,6 +9,8 @@ interface Props {
 
 export const PlaceLists: React.FC<Props> = ({ places }) => (
   <Section>
-    <Img size="m" src={places[0].image} />
+    {places.map((element: Place) => (
+      <Img size="m" src={element.image} />
+    ))}
   </Section>
 )

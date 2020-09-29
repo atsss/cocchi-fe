@@ -56,7 +56,6 @@ export const places = [
   {
     id: 2,
     name: 'sushi',
-    image:
-      'https://www.google.com/url?sa=i&url=https%3A%2F%2Fzh.wikipedia.org%2Fwiki%2F%25E5%25AF%25BF%25E5%258F%25B8&psig=AOvVaw0Eo_UU-MkgP45ZnWaBUUXB&ust=1601357990479000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKijzMaRi-wCFQAAAAAdAAAAABAD',
+    image: 'https://cocchi-sample.s3-us-west-2.amazonaws.com/community3.jpg',
   },
 ]
