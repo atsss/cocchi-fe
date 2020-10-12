@@ -14,6 +14,6 @@ export const Routes: React.FC = () => (
     <Route exact path="/communities/:id/channels" component={ChannelsIndex} />
     <Route exact path="/channels/:id" component={ChannelsShow} />
     <Route exact path="/channels/:id/edit" component={ChannelsEdit} />
-    <Route exact path="/places/" component={PlacesIndex} />
+    <Route exact path="/places" component={PlacesIndex} />
   </Switch>
 )
