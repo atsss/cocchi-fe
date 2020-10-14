@@ -6,6 +6,7 @@ import { ChannelsEdit } from '../../components/pages/channels/Edit'
 import { CommunitiesIndex } from '../../components/pages/communities/Index'
 import { UsersEdit } from '../../components/pages/users/Edit'
 import { PlacesIndex } from '../../components/pages/places/Index'
+import { PlacesShow } from '../../components/pages/places/Show'
 
 export const Routes: React.FC = () => (
   <Switch>
@@ -15,5 +16,6 @@ export const Routes: React.FC = () => (
     <Route exact path="/channels/:id" component={ChannelsShow} />
     <Route exact path="/channels/:id/edit" component={ChannelsEdit} />
     <Route exact path="/places" component={PlacesIndex} />
+    <Route exact path="/places/:id" component={PlacesShow} />
   </Switch>
 )
