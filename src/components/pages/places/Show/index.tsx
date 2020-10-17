@@ -1,14 +1,13 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 import { PlacesShowTemplate as Template } from '../../../templates/places/Show'
-import { channels, places } from '../../../../config/data'
+import { places } from '../../../../config/data'
 
 export const PlacesShow: React.FC = () => {
-  const initialValue = 0
-  const numOfPlaces = channels.reduce(
-    (sum, element) => sum + element.numOfPlaces,
-    initialValue
-  )
-  const allChannel = { id: 0, name: 'すべて', icon: 'all', numOfPlaces }
+  const { id } = useParams()
+  const place = places.find((element) => element.id === parseInt(id, 10))
+  const tmpChannel = { id: 0, name: 'すべて', icon: 'all' }
 
-  return <Template channel={allChannel} places={places} />
+  if (!place) return <p>error</p>
+  return <Template one={tmpChannel} two={place} />
 }

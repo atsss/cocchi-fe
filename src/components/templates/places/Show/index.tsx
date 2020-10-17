@@ -4,14 +4,14 @@ import { MapHeader } from '../../../organisms/headers/MapHeader'
 import { Nav } from '../../../organisms/Nav'
 
 interface Props {
-  channel: Channel
-  place: Place
+  one: Channel
+  two: Place
 }
 
-export const PlacesShowTemplate: React.FC<Props> = ({ channel, place }) => (
+export const PlacesShowTemplate: React.FC<Props> = ({ one, two }) => (
   <>
-    <MapHeader channel={channel} />
-    <p>{place.name}</p>
+    <MapHeader channel={one} />
+    <p>{two.name}</p>
     <Nav />
   </>
 )
