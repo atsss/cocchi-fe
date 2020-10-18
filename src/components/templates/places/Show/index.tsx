@@ -1,17 +1,16 @@
 import React from 'react'
-import { Channel, Place } from '../../../../interfaces'
-import { MapHeader } from '../../../organisms/headers/MapHeader'
+import { Place } from '../../../../interfaces'
+import { PlaceHeader } from '../../../organisms/headers/PlaceHeader'
 import { Nav } from '../../../organisms/Nav'
 
 interface Props {
-  one: Channel
-  two: Place
+  place: Place
 }
 
-export const PlacesShowTemplate: React.FC<Props> = ({ one, two }) => (
+export const PlacesShowTemplate: React.FC<Props> = ({ place }) => (
   <>
-    <MapHeader channel={one} />
-    <p>{two.name}</p>
+    <PlaceHeader place={place} />
+    <p>{place.name}</p>
     <Nav />
   </>
 )
