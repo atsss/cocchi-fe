@@ -23,4 +23,5 @@ export interface Place {
   id: number
   name: string
   image: string
+  visit: string
 }
