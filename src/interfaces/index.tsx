@@ -25,3 +25,10 @@ export interface Place {
   image: string
   visit: string
 }
+
+export interface Note {
+  id: number
+  name: string
+  image: string
+  comment: string
+}
