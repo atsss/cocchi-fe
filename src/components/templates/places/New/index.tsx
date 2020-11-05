@@ -9,7 +9,7 @@ interface Props {
 
 export const PlacesNewTemplate: React.FC<Props> = ({ place }) => (
   <>
-    <EditHeader backPath={`/places/${place.id}`}>新規ピン</EditHeader>
+    <EditHeader backPath={`places/${place.id}/edit`}>新規ピン</EditHeader>
     <Nav />
   </>
 )
