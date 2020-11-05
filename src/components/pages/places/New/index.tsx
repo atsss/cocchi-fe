@@ -1,12 +1,14 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
 import { PlacesNewTemplate as Template } from '../../../templates/places/New'
-import { places } from '../../../../config/data'
+// import { places } from '../../../../config/data'
 
 export const PlacesNew: React.FC = () => {
-  const { id } = useParams()
-  const place = places.find((element) => element.id === parseInt(id, 10))
+  const places = {
+    id: 0,
+    name: 'starbacks',
+    image: 'https://cocchi-sample.s3-us-west-2.amazonaws.com/community3.jpg',
+    visit: '行った',
+  }
 
-  if (!place) return <p>error</p>
-  return <Template place={place} />
+  return <Template place={places} />
 }
