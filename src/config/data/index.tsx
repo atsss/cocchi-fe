@@ -61,3 +61,12 @@ export const places = [
     visit: '行きたい',
   },
 ]
+
+export const notes = [
+  {
+    id: 1,
+    name: 'starbacks',
+    image: 'https://cocchi-sample.s3-us-west-2.amazonaws.com/community3.jpg',
+    comment: '美味しい',
+  },
+]
