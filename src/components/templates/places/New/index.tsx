@@ -4,12 +4,12 @@ import { EditHeader } from '../../../organisms/headers/EditHeader'
 import { Nav } from '../../../organisms/Nav'
 
 interface Props {
-  place: Place
+  place: Place[]
 }
 
-export const PlacesNewTemplate: React.FC<Props> = ({ place }) => (
+export const PlacesNewTemplate: React.FC<Props> = () => (
   <>
-    <EditHeader backPath={`places/${place.id}/edit`}>新規ピン</EditHeader>
+    <EditHeader backPath="/">新規ピン</EditHeader>
     <Nav />
   </>
 )
