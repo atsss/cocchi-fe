@@ -8,6 +8,7 @@ import { UsersEdit } from '../../components/pages/users/Edit'
 import { PlacesIndex } from '../../components/pages/places/Index'
 import { PlacesShow } from '../../components/pages/places/Show'
 import { PlacesEdit } from '../../components/pages/places/Edit'
+import { PlacesNew } from '../../components/pages/places/New'
 
 export const Routes: React.FC = () => (
   <Switch>
@@ -17,6 +18,7 @@ export const Routes: React.FC = () => (
     <Route exact path="/channels/:id" component={ChannelsShow} />
     <Route exact path="/channels/:id/edit" component={ChannelsEdit} />
     <Route exact path="/places" component={PlacesIndex} />
+    <Route exact path="/places/new" component={PlacesNew} />
     <Route exact path="/places/:id" component={PlacesShow} />
     <Route exact path="/places/:id/edit" component={PlacesEdit} />
   </Switch>
