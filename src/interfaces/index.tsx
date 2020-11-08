@@ -24,6 +24,8 @@ export interface Place {
   name: string
   image: string
   visit: string
+  lat: number
+  lng: number
 }
 
 export interface Note {

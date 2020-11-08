@@ -53,12 +53,16 @@ export const places = [
     name: 'starbacks',
     image: 'https://cocchi-sample.s3-us-west-2.amazonaws.com/community3.jpg',
     visit: '行った',
+    lat: 35.6812405,
+    lng: 139.7649361,
   },
   {
     id: 2,
     name: 'sushi',
     image: 'https://cocchi-sample.s3-us-west-2.amazonaws.com/community3.jpg',
     visit: '行きたい',
+    lat: 35.6580382,
+    lng: 139.6994471,
   },
 ]
 

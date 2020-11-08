@@ -8,7 +8,7 @@ interface Props {
   name: string
 }
 
-export const Marker: React.FC<Props> = ({ color = 'blue', name }) => (
+export const Marker: React.FC<Props> = ({ color = '#E54C58', name }) => (
   <div>
     <div
       className={[styles.pin, styles.bounce].join(' ')}
